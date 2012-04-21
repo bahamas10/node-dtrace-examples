@@ -1,0 +1,15 @@
+{
+  "name" : "node-dtrace-examples",
+  "description" : "Examples of node with dtrace probes inline.",
+  "keywords" : [ "dtrace", "performance" ],
+  "author" : "Dave Eddy <dave@daveeddy.com>",
+  "contributors" : [],
+  "dependencies" : {
+    "dtrace-provider" : ">= 0.0.7"
+  },
+  "repository" : {
+    "type": "git",
+    "url": "git://github.com/bahamas10/node-dtrace-examples.git"
+  },
+  "version" : "0.0.1"
+}
