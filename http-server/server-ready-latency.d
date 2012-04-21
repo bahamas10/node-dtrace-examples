@@ -1,4 +1,10 @@
 #!/usr/sbin/dtrace -s
+/**
+ * See hw long it takes to start an HTTP server in Node
+ *
+ * Author: Dave Eddy <dave@daveeddy.com>
+ * Date: 4/20/12
+ */
 
 nodehttpexample*:::http-server-start
 {

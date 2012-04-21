@@ -1,8 +1,16 @@
 #!/usr/bin/env node
+/**
+ * Start an HTTP server in Node with DTrace probes
+ * Use server-ready-latency.d to examine probes
+ *
+ * Author: Dave Eddy <dave@daveeddy.com>
+ * Date: 4/20/12
+ */
 
 // Requires
 var http = require('http'),
-    dtp = require('dtrace-provider').createDTraceProvider('nodehttpexample'),
+    provider = 'nodehttpexample', // DTrace provider name
+    dtp = require('dtrace-provider').createDTraceProvider(provider),
     host = 'localhost',
     port = 8000,
     delay = 5; // seconds
@@ -34,7 +42,7 @@ function server_started() {
 }
 
 // Delay the start so you can run DTrace against it
-console.log('Starting server in %d seconds... begin DTracing now!', delay);
+console.log('Starting server in %d seconds... begin DTracing now! (Provider "%s")', delay, provider);
 setTimeout(function() {
   start_server(host, port);
   console.log('Server running at http://%s:%d/', host, port);
