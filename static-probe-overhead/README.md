@@ -1,7 +1,7 @@
 Static Probe Overhead
 =====================
 
-Example scripts for seeing static DTrace probes overhead in Node
+Example scripts for seeing static DTrace probe overhead in Node
 
 Usage
 -----
