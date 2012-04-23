@@ -20,6 +20,11 @@ Counting to 1,000,000.  Start count.js, and run count.d in a separate window.
       0  19026           func:count-to-n-return Counted in 4357987 ns (4 ms)
 
 Hello Loop:
+
 	node hello_loop.js
 
 	dtrace -n 'helloloop$target::: { printf("%Y %s", walltimestamp, copyinstr(arg0)); }' -p PID 
+	dtrace: description 'helloloop$target::: ' matched 1 probe
+	CPU     ID                    FUNCTION:NAME
+  	5    70247                 func:print-entry 2012 Apr 20 22:02:35 hello world
+ 	13   70247                 func:print-entry 2012 Apr 20 22:02:37 hello world
