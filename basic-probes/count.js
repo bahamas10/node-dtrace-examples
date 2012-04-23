@@ -7,7 +7,7 @@
  * Date: 4/20/12
  */
 
-// Requires
+// Requires / Constants
 var provider = 'nodestatic', // DTrace provider name
     dtp = require('dtrace-provider').createDTraceProvider(provider),
     n = 1000000, // number to count to

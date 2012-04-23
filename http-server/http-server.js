@@ -7,7 +7,7 @@
  * Date: 4/20/12
  */
 
-// Requires
+// Requires / Constants
 var http = require('http'),
     provider = 'nodehttpexample', // DTrace provider name
     dtp = require('dtrace-provider').createDTraceProvider(provider),

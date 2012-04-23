@@ -6,7 +6,7 @@
  * Date: 4/20/12
  */
 
-// Requires
+// Requires / Constants
 var dtp = require('dtrace-provider').createDTraceProvider('nodestatic'),
     n = 1000000;
 
