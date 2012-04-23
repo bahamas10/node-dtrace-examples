@@ -11,7 +11,7 @@
  */
 
 var n = 20000;
-var dtp = require('dtrace-provider').createDTraceProvider('mike');
+var dtp = require('dtrace-provider').createDTraceProvider('unnecessary-test');
 for ( var i = 0; i < n; i ++ ) {
   dtp.addProbe('unnecessary-' + i, 'char *');
 };
