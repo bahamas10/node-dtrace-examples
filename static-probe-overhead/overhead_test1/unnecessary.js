@@ -14,12 +14,12 @@ var n = 1000;
 var dtp = require('dtrace-provider').createDTraceProvider('unnecessary-dtrace');
 for ( var i = 0; i < n; i ++ ) {
   dtp.addProbe('unnecessary-' + i, 'char *');
-};
+}
 
 function print(text) {
         for ( var i = 0; i < n; i ++ ) {
-          dtp.fire('unnecessary-' + i, function () { return [text] });
-        };
+          dtp.fire('unnecessary-' + i, function () { return [text]; });
+        }
         console.log(text);
 }
 

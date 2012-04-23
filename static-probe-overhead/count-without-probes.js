@@ -6,7 +6,7 @@
  * Date: 4/20/12
  */
 
-var n = 1000000
+var n = 1000000;
 
 // Count to n
 function count_to(n) {

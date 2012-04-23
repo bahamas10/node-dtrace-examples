@@ -2,7 +2,7 @@
 
 /**
  * This prints "hello world" every 2000ms, it will also print its PID
- * Use the PID as an argument to the dtrace one liner 
+ * Use the PID as an argument to the dtrace one liner
  *
  * Author: Michael Zeller <mike@mikezeller.net>
  * Date: 4/20/12
@@ -13,10 +13,10 @@ dtp.addProbe('print-entry', 'char *');
 
 console.log("The PID is: " + process.pid);
 function echoserver(text) {
-        dtp.fire('print-entry', function () {
-        return [text] 
-        });
-        console.log(text);
+  dtp.fire('print-entry', function () {
+    return [text];
+  });
+  console.log(text);
 }
 
 dtp.enable();
