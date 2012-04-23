@@ -14,5 +14,11 @@ Installation
 
 Run `npm install` before using any of the examples.
 
+Contribute
+----------
+
+The more examples we can get in here, the better.  If you have any good example Node.js
+or DTrace scripts, fork the repo, commit them, and submit a pull request.
+
 [dtrace-provider]: https://github.com/chrisa/node-dtrace-provider
 "DTrace Provider"
