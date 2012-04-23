@@ -3,7 +3,9 @@
   "description" : "Examples of node with dtrace probes inline.",
   "keywords" : [ "dtrace", "performance" ],
   "author" : "Dave Eddy <dave@daveeddy.com>",
-  "contributors" : [],
+  "contributors" : [
+    "Mike Zeller <mike@mikezeller.net"
+  ],
   "dependencies" : {
     "dtrace-provider" : ">= 0.0.7"
   },
