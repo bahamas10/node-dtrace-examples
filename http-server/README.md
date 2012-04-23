@@ -18,7 +18,7 @@ Example
 Terminal 1:
 
     root@Operationss-MacBook-Pro ~/dev/node-dtrace-examples/http-server #  ./http-server.js
-    Starting server in 5 seconds... begin DTracing now! (Provider "nodehttpexample")
+    Starting server in 5 seconds... begin DTracing now! (Provider "nodehttpserver")
 
 Terminal 2:
 

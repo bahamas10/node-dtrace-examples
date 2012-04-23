@@ -6,13 +6,13 @@
  * Date: 4/20/12
  */
 
-nodehttpexample*:::http-server-start
+nodehttpserver*:::http-server-start
 {
 	self->s = timestamp;
 	printf("Starting server on %s:%d", copyinstr(arg0), arg1);
 }
 
-nodehttpexample*:::http-server-ready
+nodehttpserver*:::http-server-ready
 /self->s/
 {
 	this->delta_ns = timestamp - self->s;

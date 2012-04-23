@@ -9,7 +9,7 @@
 
 // Requires / Constants
 var http = require('http'),
-    provider = 'nodehttpexample', // DTrace provider name
+    provider = 'nodehttpserver', // DTrace provider name
     dtp = require('dtrace-provider').createDTraceProvider(provider),
     host = 'localhost',
     port = 8000,
