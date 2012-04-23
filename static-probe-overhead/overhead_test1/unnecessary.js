@@ -10,31 +10,16 @@
  * Date: 4/23/12
  */
 
-
+var n = 1000;
 var dtp = require('dtrace-provider').createDTraceProvider('unnecessary-dtrace');
-dtp.addProbe('unnecessary-1', 'char *');
-dtp.addProbe('unnecessary-2', 'char *');
-dtp.addProbe('unnecessary-3', 'char *');
-dtp.addProbe('unnecessary-4', 'char *');
-dtp.addProbe('unnecessary-5', 'char *');
-dtp.addProbe('unnecessary-6', 'char *');
-dtp.addProbe('unnecessary-7', 'char *');
-dtp.addProbe('unnecessary-8', 'char *');
-dtp.addProbe('unnecessary-9', 'char *');
-dtp.addProbe('unnecessary-10', 'char *');
-
+for ( var i = 0; i < n; i ++ ) {
+  dtp.addProbe('unnecessary-' + i, 'char *');
+};
 
 function print(text) {
-        dtp.fire('unnecessary-1', function () { return [text] });
-        dtp.fire('unnecessary-2', function () { return [text] });
-        dtp.fire('unnecessary-3', function () { return [text] });
-        dtp.fire('unnecessary-4', function () { return [text] });
-        dtp.fire('unnecessary-5', function () { return [text] });
-        dtp.fire('unnecessary-6', function () { return [text] });
-        dtp.fire('unnecessary-7', function () { return [text] });
-        dtp.fire('unnecessary-8', function () { return [text] });
-        dtp.fire('unnecessary-9', function () { return [text] });
-        dtp.fire('unnecessary-10', function () { return [text] });
+        for ( var i = 0; i < n; i ++ ) {
+          dtp.fire('unnecessary-' + i, function () { return [text] });
+        };
         console.log(text);
 }
 
