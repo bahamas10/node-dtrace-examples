@@ -4,7 +4,7 @@
   "keywords" : [ "dtrace", "performance" ],
   "author" : "Dave Eddy <dave@daveeddy.com>",
   "contributors" : [
-    "Mike Zeller <mike@mikezeller.net"
+    "Mike Zeller <mike@mikezeller.net>"
   ],
   "dependencies" : {
     "dtrace-provider" : ">= 0.0.7"
