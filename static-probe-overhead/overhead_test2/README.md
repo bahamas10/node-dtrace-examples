@@ -10,13 +10,13 @@ Usage
 
 Example
 -------
-	**Tracing with dtrace:**
+	__Tracing with dtrace:__
 	[root@notch ~/src/node-dtrace-examples/static-probe-overhead/overhead_test2]# ptime node dtrace_looper.js 
 	real       11.798035315
 	user        1.783312948
 	sys         0.012409268
 	
-	**No dtrace running:**
+	__No dtrace running:__
 	[root@notch ~/src/node-dtrace-examples/static-probe-overhead/overhead_test2]# ptime node dtrace_looper.js 
 	real       10.384005363
 	user        0.371518895
