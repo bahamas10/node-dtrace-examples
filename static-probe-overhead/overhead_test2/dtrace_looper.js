@@ -2,8 +2,9 @@
 
 /**
  *
- * This is a random test to test probe overhead.
- * This node app is designed to loop n times and fire a dtrace probe.
+ * This node app is used to test firing a probe while running dtrace vs no running dtrace
+ * It will loop n times and fire a probe.  You time the test tracing with dtrace and testing without tracing.
+ * When executing the app it will sleep 10s giving you a chance to start tracing with dtrace.
  *
  * Author: Michael Zeller <mike@mikezeller.net>
  * Date: 4/23/12
