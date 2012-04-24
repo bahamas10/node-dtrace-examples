@@ -10,11 +10,12 @@
  * Date: 4/23/12
  */
 
-var n = 1000;
-var dtp = require('dtrace-provider').createDTraceProvider('unnecessary-dtrace');
+var n = 20000;
+var dtp = require('dtrace-provider').createDTraceProvider('unnecessary-test');
 for ( var i = 0; i < n; i ++ ) {
   dtp.addProbe('unnecessary-' + i, 'char *');
-}
+};
+dtp.enable();
 
 function print(text) {
         for ( var i = 0; i < n; i ++ ) {
