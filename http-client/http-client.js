@@ -29,7 +29,7 @@ function make_request(options, callback) {
   });
 
   // Make the request
-  req.end()
+  req.end();
 }
 
 // Called when the request ends

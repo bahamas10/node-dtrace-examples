@@ -19,8 +19,8 @@ dtp.enable();
 
 function print(text) {
         for ( var i = 0; i < n; i ++ ) {
-          dtp.fire('unnecessary-' + i, function () { return [text] });
-        };
+          dtp.fire('unnecessary-' + i, function () { return [text]; });
+        }
         console.log(text);
 }
 

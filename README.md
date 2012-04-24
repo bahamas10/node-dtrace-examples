@@ -1,7 +1,7 @@
 Node.js DTrace Examples
 =======================
 
-A set of examples scripts showing how to use the dtrace-provider module in Node.
+A set of examples scripts showing how to use the [dtrace-provider][dtrace-provider] module in Node.
 
 Usage
 -----
@@ -13,3 +13,12 @@ Installation
 ------------
 
 Run `npm install` before using any of the examples.
+
+Contribute
+----------
+
+The more examples we can get in here, the better.  If you have any good example Node.js
+or DTrace scripts, fork the repo, commit them, and submit a pull request.
+
+[dtrace-provider]: https://github.com/chrisa/node-dtrace-provider
+"DTrace Provider"
