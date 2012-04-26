@@ -3,6 +3,8 @@ Node.js Function Tracing
 
 Trace function call depth and latency in Node.js with DTrace
 
+Inspired by [dapptrace][dapptrace] by [Brendan Gregg][brendan]
+
 Usage
 -----
 
@@ -39,3 +41,8 @@ Terminal 2:
     [2012 Apr 26 16:06:09]  <-- func-a-return (163436 ns / 163 us / 0 ms)
 
 You will see DTrace output everytime the chain of functions are called
+
+[dapptrace]: http://www.brendangregg.com/DTrace/dapptrace
+"dapptrace"
+[brendan]: https://github.com/brendangregg
+"Brendan Gregg"
