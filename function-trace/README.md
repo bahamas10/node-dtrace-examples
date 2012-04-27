@@ -12,8 +12,12 @@ Start either of the 2 Node.js scripts to start a loop of nested function calls.
 The script `simple-nested-functions.js` has 3 nested functions that will get called
 and fire DTrace probes on entry and return.  The script `dynamic-nested-functions.js`
 has a dynamic number of nested functions created (50 by default), and can be traced.
+
 The DTrace script `func-trace.d` can be invoked to trace both Node.js scripts, showing
-function entry and return, and timing the latency.
+function entry and return, and timing the latency. The other script `flowindent-func-trace.d`
+can also be used to show how to get the function flow uses DTrace's built in flowindent
+option.  The `func-trace.d` script shows how to manually achieve flowindent with a
+finer grain control over the output.
 
 Example
 -------
