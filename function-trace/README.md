@@ -15,7 +15,7 @@ has a dynamic number of nested functions created (50 by default), and can be tra
 
 The DTrace script `func-trace.d` can be invoked to trace both Node.js scripts, showing
 function entry and return, and timing the latency. The other script `flowindent-func-trace.d`
-can also be used to show how to get the function flow uses DTrace's built in flowindent
+can also be used to show the function flow using DTrace's built in flowindent
 option.  The `func-trace.d` script shows how to manually achieve flowindent with a
 finer grain control over the output.
 
