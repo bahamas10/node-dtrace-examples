@@ -63,5 +63,5 @@ console.log('Looping with %d second intervals... Beging DTracing now! (provider 
     delay, provider, process.pid);
 
 setInterval(function() {
-  a(); // calls b() calls c()
+  a(); // calls b(), and b() calls c(), i'll beat you to the top of the coconut tree
 }, delay * 1000);
