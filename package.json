@@ -6,6 +6,7 @@
   "contributors" : [
     "Mike Zeller <mike@mikezeller.net>"
   ],
+  "license": "MIT",
   "dependencies" : {
     "dtrace-provider" : ">= 0.0.7"
   },
